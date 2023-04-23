@@ -1,3 +1,9 @@
+.App {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
 /* General */
 
 .container {
@@ -12,6 +18,7 @@
 
 .section {
   padding: 70px 0;
+  flex-grow: 1;
 }
 
 .title-1 {

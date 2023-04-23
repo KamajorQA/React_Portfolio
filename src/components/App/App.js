@@ -2,6 +2,7 @@ import Navigation from '../Navigaton/Navigation';
 import Footer from '../Footer/Footer';
 import Home from '../../layouts/Home';
 import Projects from '../../layouts/Projects';
+import Contacts from '../../layouts/Contacts';
 import './app.css';
 
 function App() {
@@ -9,7 +10,8 @@ function App() {
     <div className="App">
       <Navigation />
       {/* <Home /> */}
-      <Projects />
+      {/* <Projects /> */}
+      <Contacts />
       <Footer />
     </div>
   );
