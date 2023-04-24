@@ -1,36 +1,45 @@
-import greedyDragonsBig from '../assets/img/projects/02-big.jpg';
+import { useParams } from 'react-router-dom';
+import projectsList from '../utilities/projectsList';
 import gitHubBlack from '../assets/img/icons/gitHub-black.svg';
 import ButtonOutline from '../components/ButtonOutline/ButtonOutline';
 
 function ProjectPage() {
+  const { slug } = useParams();
+  const currentProject = projectsList.find((elem) => elem.slug === slug);
+
+  console.log(currentProject);
+
   return (
     <main className="section">
       <div className="container">
         <div className="project-details">
-          <h1 className="title-1">Project title</h1>
-
+          <h1 className="title-1">{currentProject.title}</h1>
           <img
-            src={greedyDragonsBig}
-            alt=""
+            src={currentProject.bigImg}
+            alt={currentProject.title}
             className="project-details__cover"
           />
 
           <div className="project-details__desc">
-            <p>Stack: React, HTML, CSS</p>
+            <h4>{currentProject.description}</h4>
+            <p>{currentProject.details}</p>
+            <p>Stack: {currentProject.stack}</p>
           </div>
           <ButtonOutline
             btnDesc={'Visit project site'}
-            btnLink={'http://localhost:3000/'}
+            btnLink={currentProject.deployLink}
           />
           <ButtonOutline
             icon={gitHubBlack}
             btnDesc={'Code on GitHub'}
-            btnLink={'http://localhost:3000/'}
+            btnLink={currentProject.gitHubLink}
           />
-          <ButtonOutline
-            btnDesc={'View presentation'}
-            btnLink={'http://localhost:3000/'}
-          />
+          {currentProject.presentation && (
+            <ButtonOutline
+              btnDesc={'View presentation'}
+              btnLink={currentProject.presentation}
+            />
+          )}
         </div>
       </div>
     </main>
