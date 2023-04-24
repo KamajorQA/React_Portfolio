@@ -7,10 +7,9 @@ function Projects() {
       <div className="container">
         <h2 className="title-1">Projects</h2>
         <ul className="projects">
-          <ProjectCard imgLink={projectsList[0].previewImg} />
-          <ProjectCard imgLink={projectsList[1].previewImg} />
-          <ProjectCard imgLink={projectsList[2].previewImg} />
-          <ProjectCard imgLink={projectsList[3].previewImg} />
+          {projectsList.map((elem) => {
+            return <ProjectCard {...elem} key={elem.slug} />;
+          })}
         </ul>
       </div>
     </main>
