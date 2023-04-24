@@ -3,6 +3,7 @@ import Footer from '../Footer/Footer';
 import Home from '../../layouts/Home';
 import Projects from '../../layouts/Projects';
 import Contacts from '../../layouts/Contacts';
+import ProjectPage from '../../layouts/ProjectPage';
 import './app.css';
 
 function App() {
@@ -10,8 +11,9 @@ function App() {
     <div className="App">
       <Navigation />
       {/* <Home /> */}
-      <Projects />
+      {/* <Projects /> */}
       {/* <Contacts /> */}
+      <ProjectPage />
       <Footer />
     </div>
   );
