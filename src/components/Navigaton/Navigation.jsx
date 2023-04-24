@@ -1,15 +1,16 @@
 import sun from '../../assets/img/icons/sun.svg';
 import moon from '../../assets/img/icons/moon.svg';
 import './navigation.css';
+import { Link, NavLink } from 'react-router-dom';
 
 function Navigation() {
   return (
     <nav className="nav">
       <div className="container">
         <div className="nav-row">
-          <a href="./index.html" className="logo">
+          <Link to="/" className="logo">
             <strong>Kamajor's</strong> portfolio
-          </a>
+          </Link>
 
           <button className="dark-mode-btn">
             <img src={sun} alt="Light mode" className="dark-mode-btn__icon" />
@@ -18,22 +19,19 @@ function Navigation() {
 
           <ul className="nav-list">
             <li className="nav-list__item">
-              <a
-                href="./index.html"
-                className="nav-list__link nav-list__link--active"
-              >
+              <NavLink to="/" className="nav-list__link">
                 Home
-              </a>
+              </NavLink>
             </li>
             <li className="nav-list__item">
-              <a href="./projects.html" className="nav-list__link">
+              <NavLink to="/projects" className="nav-list__link">
                 Projects
-              </a>
+              </NavLink>
             </li>
             <li className="nav-list__item">
-              <a href="./contacts.html" className="nav-list__link">
+              <NavLink to="/contacts" className="nav-list__link">
                 Contacts
-              </a>
+              </NavLink>
             </li>
           </ul>
         </div>
