@@ -1,5 +1,5 @@
-import ProjectCard from '../components/ProjectCard/ProjectCard';
 import projectsList from '../utilities/projectsList';
+import ProjectCard from '../components/ProjectCard/ProjectCard';
 
 function Projects() {
   return (

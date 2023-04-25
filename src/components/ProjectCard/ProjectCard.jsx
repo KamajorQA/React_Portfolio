@@ -1,15 +1,13 @@
+import { Link } from 'react-router-dom';
 import './projectCard.css';
 
-function ProjectCard({ previewImg, title, description, details, stack }) {
+function ProjectCard({ previewImg, title, slug }) {
   return (
     <li className="project">
-      <a href="./project-page.html">
+      <Link to={`/projects/${slug}`}>
         <img src={previewImg} alt={title} className="project__img" />
         <h3 className="project__title">{title}</h3>
-        {/* <h4>{description}</h4> */}
-        {/* {details && <p>{details}</p>}
-        <p>{stack}</p> */}
-      </a>
+      </Link>
     </li>
   );
 }

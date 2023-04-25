@@ -6,9 +6,6 @@ import ButtonOutline from '../components/ButtonOutline/ButtonOutline';
 function ProjectPage() {
   const { slug } = useParams();
   const currentProject = projectsList.find((elem) => elem.slug === slug);
-
-  console.log(currentProject);
-
   return (
     <main className="section">
       <div className="container">
