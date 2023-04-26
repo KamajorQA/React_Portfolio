@@ -1,10 +1,12 @@
-import { useState, useEffect, useRef } from 'react';
+import { useEffect, useRef } from 'react';
+import useLocalStorage from '../../utilities/useLocalStorage';
 import sun from '../../assets/img/icons/sun.svg';
 import moon from '../../assets/img/icons/moon.svg';
 import './buttonTheme.css';
 
 function ButtonTheme() {
-  const [theme, setTheme] = useState('light');
+  const [theme, setTheme] = useLocalStorage('theme', 'dark');
+
   const buttonRef = useRef(null);
 
   useEffect(() => {
