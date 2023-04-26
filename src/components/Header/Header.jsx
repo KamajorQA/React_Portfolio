@@ -14,7 +14,12 @@ function Header() {
         <div className="header__text">
           <p>with passion for learning and creating.</p>
         </div>
-        <a href="#!" className="btn">
+        <a
+          href="https://drive.google.com/file/d/1o5iMEEENJ7yclMOm3rl1rxG0d7bLLDR9/view"
+          className="btn"
+          target="_blank"
+          rel="noreferrer"
+        >
           Check my CV
         </a>
       </div>

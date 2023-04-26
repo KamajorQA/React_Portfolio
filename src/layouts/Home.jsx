@@ -10,8 +10,8 @@ function Home() {
             <li className="content-list__item">
               <h2 className="title-2">I'm currently using</h2>
               <p>
-                JavaScript, ReactJS, React Router, HTML, CSS & module CSS, NPM,
-                AntDesign
+                JavaScript, ReactJS, React Router, HTML, CSS & module CSS, SCSS,
+                NPM, AntDesign
               </p>
             </li>
           </ul>

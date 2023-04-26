@@ -27,7 +27,7 @@
   height: 24px;
 
   border-radius: 50%;
-  background-color: #fff;
+  background-color: var(--title-1);
 
   transition: left 0.2s ease-in;
 }

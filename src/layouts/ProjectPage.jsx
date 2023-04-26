@@ -12,7 +12,7 @@ function ProjectPage() {
   const { slug } = useParams();
   const currentProject = projectsList.find((elem) => elem.slug === slug);
   return (
-    <main className="section">
+    <main className="section section--projectPage">
       <div className="container">
         <section className="controls">
           <ButtonOutline
@@ -35,23 +35,25 @@ function ProjectPage() {
             <p>{currentProject.details}</p>
             <p>Stack: {currentProject.stack}</p>
           </div>
-          <ButtonOutline
-            faIcon={faUpRightFromSquare}
-            btnDesc={'Visit project site'}
-            btnLink={currentProject.deployLink}
-          />
-          <ButtonOutline
-            localIcon={gitHubBlack}
-            btnDesc={'Code on GitHub'}
-            btnLink={currentProject.gitHubLink}
-          />
-          {currentProject.presentation && (
+          <section className="controls controls--links">
             <ButtonOutline
-              faIcon={faFilePowerpoint}
-              btnDesc={'View presentation'}
-              btnLink={currentProject.presentation}
+              faIcon={faUpRightFromSquare}
+              btnDesc={'Visit project site'}
+              btnLink={currentProject.deployLink}
             />
-          )}
+            <ButtonOutline
+              localIcon={gitHubBlack}
+              btnDesc={'Code on GitHub'}
+              btnLink={currentProject.gitHubLink}
+            />
+            {currentProject.presentation && (
+              <ButtonOutline
+                faIcon={faFilePowerpoint}
+                btnDesc={'View presentation'}
+                btnLink={currentProject.presentation}
+              />
+            )}
+          </section>
         </div>
       </div>
     </main>

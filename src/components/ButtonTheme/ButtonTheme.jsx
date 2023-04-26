@@ -5,7 +5,7 @@ import moon from '../../assets/img/icons/moon.svg';
 import './buttonTheme.css';
 
 function ButtonTheme() {
-  const [theme, setTheme] = useLocalStorage('theme', 'dark');
+  const [theme, setTheme] = useLocalStorage('theme', 'light');
 
   const buttonRef = useRef(null);
 

@@ -8,6 +8,8 @@
   --black-border: #26292d;
   --white: #fff;
   --purple: #5c62ec;
+  --orange: #f75404;
+  --skyblue: #c6e3eb;
 
   /* Nav */
   --nav-bg: var(--black);
@@ -23,10 +25,11 @@
   --footer-text: var(--white);
 
   /* Light mode */
-  --page-bg: var(--white);
+  --page-bg: var(--skyblue);
   --text-color: var(--black);
-  --accent: var(--purple);
+  --accent: var(--orange);
   --title-1: var(--accent);
+  --enso-grayscale: grayscale(0.5);
 
   --project-card-bg: var(--white);
   --project-card-text: var(--black);
@@ -39,6 +42,7 @@
   --text-color: var(--white);
 
   --title-1: var(--white);
+  --enso-grayscale: grayscale(0.8);
 
   --project-card-bg: var(--black);
   --project-card-text: var(--white);

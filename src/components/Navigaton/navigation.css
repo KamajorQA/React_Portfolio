@@ -28,6 +28,7 @@
 
 .logo strong {
   font-weight: 700;
+  color: var(--title-1);
 }
 
 .nav-list {
