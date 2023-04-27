@@ -11,6 +11,7 @@ import ButtonOutline from '../components/ButtonOutline/ButtonOutline';
 function ProjectPage() {
   const { slug } = useParams();
   const currentProject = projectsList.find((elem) => elem.slug === slug);
+  const projectDetailsArray = currentProject.details.split('. ');
   return (
     <main className="section section--projectPage">
       <div className="container">
@@ -32,7 +33,16 @@ function ProjectPage() {
 
           <div className="project-details__desc">
             <h4>{currentProject.description}</h4>
-            <p>{currentProject.details}</p>
+            <div className={'project-details__desc--separator'}>
+              {projectDetailsArray.map((detailedRow, index) => {
+                return (
+                  <p
+                    className="project-details__desc--prolix"
+                    key={index}
+                  >{`${detailedRow}.`}</p>
+                );
+              })}
+            </div>
             <p>Stack: {currentProject.stack}</p>
           </div>
           <section className="controls controls--links">

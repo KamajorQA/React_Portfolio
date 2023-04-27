@@ -32,7 +32,6 @@
 
 .title-2 {
   margin-bottom: 20px;
-
   font-size: 40px;
   font-weight: 700;
   line-height: 1.3;
@@ -68,11 +67,9 @@
 .project-details {
   margin: 0 auto;
   max-width: 865px;
-
   display: flex;
   flex-direction: column;
   align-items: center;
-
   text-align: center;
 }
 
@@ -86,10 +83,20 @@
 
 .project-details__desc {
   margin-bottom: 30px;
-
   font-weight: 700;
   font-size: 24px;
   line-height: 1.3;
+}
+
+.project-details__desc--separator {
+  margin: 20px 0;
+}
+
+.project-details__desc--prolix {
+  text-align: left;
+  text-align: justify;
+  font-weight: normal;
+  text-indent: 50px;
 }
 
 /* Content list */

@@ -7,9 +7,9 @@
   --black: #171718;
   --black-border: #26292d;
   --white: #fff;
-  --purple: #5c62ec;
   --orange: #f75404;
   --skyblue: #c6e3eb;
+  --cloudy: #a7d4d1;
 
   /* Nav */
   --nav-bg: var(--black);
@@ -24,13 +24,16 @@
   --footer-bg: var(--black);
   --footer-text: var(--white);
 
+  /* ButtonOutline */
+  --outbtn-shadow: 0px 0px 3px var(--accent);
+
   /* Light mode */
   --page-bg: var(--skyblue);
   --text-color: var(--black);
   --accent: var(--orange);
   --title-1: var(--accent);
   --enso-grayscale: grayscale(0.5);
-
+  --outbtn-background: var(--cloudy);
   --project-card-bg: var(--white);
   --project-card-text: var(--black);
   --box-shadow: 0px 5px 35px rgba(0, 0, 0, 0.25);
@@ -40,10 +43,9 @@
   /* Dark mode */
   --page-bg: #252526;
   --text-color: var(--white);
-
   --title-1: var(--white);
   --enso-grayscale: grayscale(0.8);
-
+  --outbtn-background: var(--white);
   --project-card-bg: var(--black);
   --project-card-text: var(--white);
   --box-shadow: 0px 5px 35px rgba(0, 0, 0, 0.8);
