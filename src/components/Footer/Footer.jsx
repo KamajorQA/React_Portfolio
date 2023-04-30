@@ -25,7 +25,11 @@ function Footer() {
               </a>
             </li>
             <li className="social__item">
-              <a href="#!" target="_blank" rel="noreferrer">
+              <a
+                href="https://www.linkedin.com/in/KamajorQA"
+                target="_blank"
+                rel="noreferrer"
+              >
                 <img src={linkedIn} alt="LinkedIn Link" />
               </a>
             </li>
