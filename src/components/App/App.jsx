@@ -6,6 +6,7 @@ import Home from '../../layouts/Home';
 import Projects from '../../layouts/Projects';
 import Contacts from '../../layouts/Contacts';
 import ProjectPage from '../../layouts/ProjectPage';
+import NotFound from '../../layouts/NotFound';
 import './app.css';
 
 function App() {
@@ -19,6 +20,7 @@ function App() {
           <Route path="projects" element={<Projects />} />
           <Route path="/projects/:slug" element={<ProjectPage />} />
           <Route path="/contacts" element={<Contacts />} />
+          <Route path="*" element={<NotFound />} />
         </Routes>
         <Footer />
       </BrowserRouter>

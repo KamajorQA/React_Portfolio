@@ -125,6 +125,13 @@
   margin-top: 0.5em;
 }
 
+/* Not Found */
+
+.vincent-image {
+  border-radius: 20px;
+  margin-bottom: 20px;
+}
+
 @media (max-width: 620px) {
   /* General */
 
