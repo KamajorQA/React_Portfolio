@@ -10,9 +10,11 @@ function Home() {
             <li className="content-list__item">
               <h2 className="title-2">I'm currently using</h2>
               <p>
-                JavaScript, ReactJS, React Router, HTML, CSS & module CSS, SCSS,
-                NPM, AntDesign
+                JavaScript, TypeScript, React, Redux Toolkit, RTK Query,
+                Firebase
               </p>
+              <p>CSS Modules, SCSS, Tailwind, AntDesign</p>
+              <p>Jest, NPM, GitHub Actions</p>
             </li>
           </ul>
         </div>
