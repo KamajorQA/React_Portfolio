@@ -1,4 +1,4 @@
-name: GitHub Actions Kamajor's portfolio
+name: Kamajor's portfolio
 on:
   push:
     branches: [master]

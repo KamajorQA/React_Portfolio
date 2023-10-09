@@ -7,7 +7,7 @@ import Projects from '../../layouts/Projects';
 import Contacts from '../../layouts/Contacts';
 import ProjectPage from '../../layouts/ProjectPage';
 import NotFound from '../../layouts/NotFound';
-import './app.css';
+import './style.css';
 
 function App() {
   return (
