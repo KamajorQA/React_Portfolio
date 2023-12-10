@@ -1,8 +1,10 @@
+import CursorCompanion from '../components/CursorCompanion/CursorCompanion';
 import Header from '../components/Header/Header';
 
 function Home() {
   return (
     <>
+      <CursorCompanion />
       <Header />
       <main className="section">
         <div className="container">
@@ -13,7 +15,7 @@ function Home() {
                 JavaScript, TypeScript, React, Redux Toolkit, RTK Query,
                 Firebase
               </p>
-              <p>CSS Modules, SCSS, Tailwind, AntDesign</p>
+              <p>CSS Modules, SCSS, Tailwind, AntDesign, Framer Motion</p>
               <p>Jest, NPM, GitHub Actions</p>
             </li>
           </ul>

@@ -20,12 +20,15 @@
   align-items: center;
 }
 
-.social__item {
+.social__item a {
   transition: all 0.2s ease-in;
+  fill: white;
+  display: flex;
+  align-items: center;
 }
 
-.social__item:hover {
-  opacity: 0.8;
+.social__item a:hover {
+  fill: var(--accent);
 }
 
 .copyright {
