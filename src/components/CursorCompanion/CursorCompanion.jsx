@@ -35,7 +35,7 @@ function CursorCompanion({ hideCursor }) {
       }}
       className="cursorCompanion"
     >
-      {!hideCursor == true ? (
+      {hideCursor == false ? (
         <motion.div layoutId="cursor" className="ballPointer"></motion.div>
       ) : null}
     </motion.div>
