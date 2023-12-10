@@ -1,10 +1,5 @@
 import { useEffect } from 'react';
-import {
-  motion,
-  AnimatePresence,
-  useSpring,
-  useMotionValue,
-} from 'framer-motion';
+import { motion, useSpring, useMotionValue } from 'framer-motion';
 import './cursorCompanion.css';
 
 function CursorCompanion({ hideCursor }) {
