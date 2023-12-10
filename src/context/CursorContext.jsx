@@ -1,8 +1,8 @@
 import React, { createContext, useState } from 'react';
 
 const CursorContext = createContext({
-  collapsed: true,
-  switchCollapse: () => {},
+  cursorBallHidden: false,
+  switchCursorBallHidden: () => {},
 });
 
 const CursorContextProvider = ({ children }) => {

@@ -1,8 +1,11 @@
-import { useEffect } from 'react';
+import { useEffect, useContext } from 'react';
 import { motion, useSpring, useMotionValue } from 'framer-motion';
+import { CursorContext } from '../../context/CursorContext';
 import './cursorCompanion.css';
 
-function CursorCompanion({ hideCursor }) {
+function CursorCompanion() {
+  const { cursorBallHidden } = useContext(CursorContext);
+
   const cursorX = useMotionValue(-100);
   const cursorY = useMotionValue(-100);
 
@@ -35,7 +38,7 @@ function CursorCompanion({ hideCursor }) {
       }}
       className="cursorCompanion"
     >
-      {hideCursor == false ? (
+      {cursorBallHidden === false ? (
         <motion.div layoutId="cursor" className="ballPointer"></motion.div>
       ) : null}
     </motion.div>

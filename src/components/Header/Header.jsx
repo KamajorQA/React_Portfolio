@@ -1,6 +1,10 @@
+import { useContext } from 'react';
+import { CursorContext } from '../../context/CursorContext';
 import './header.css';
 
 function Header() {
+  const { switchCursorBallHidden } = useContext(CursorContext);
+
   return (
     <header className="header">
       <div className="header__wrapper">
@@ -19,6 +23,8 @@ function Header() {
           className="btn"
           target="_blank"
           rel="noreferrer"
+          onPointerEnter={switchCursorBallHidden}
+          onPointerLeave={switchCursorBallHidden}
         >
           Check my CV
         </a>

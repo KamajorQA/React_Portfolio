@@ -4,7 +4,7 @@ import Header from '../components/Header/Header';
 function Home() {
   return (
     <>
-      <CursorCompanion hideCursor={false} />
+      <CursorCompanion />
       <Header />
       <main className="section">
         <div className="container">

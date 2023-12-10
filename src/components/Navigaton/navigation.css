@@ -43,11 +43,11 @@
 
 .nav-list__link {
   color: var(--nav-text);
-  transition: opacity 0.2s ease-in;
+  transition: all 0.2s ease-in;
 }
 
 .nav-list__link:hover {
-  opacity: 0.8;
+  color: var(--accent);
 }
 
 .active {
